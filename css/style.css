@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+.logo {
+	padding: 56px;
+	padding-top: 12px;
+	padding-bottom: 17px;
+	background-image: url("../img/fon-logo.jpg");
+}
