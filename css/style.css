@@ -41,15 +41,3 @@ body {
 .item-cart::before {
 	content: url("../img/icons/icon-cart.svg");
 }
-
-.social-icons li {
-	list-style-type: none;
-}
-
-.vk {
-	content: url("../img/icons/vk.svg");
-}
-
-.vk:hover {
-	content: url("../img/icons/vk-red.svg");
-}
