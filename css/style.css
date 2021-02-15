@@ -25,3 +25,31 @@ body {
 .login::before {
 	content: url("../img/icons/icon-login.svg");
 }
+
+.user::before {
+	content: url("../img/icons/icon-user.svg")
+}
+
+.user::after {
+	content: url("../img/icons/icon-login-out.svg");
+}
+
+.home {
+	content: url("../img/icons/icon-home.svg");
+}
+
+.item-cart::before {
+	content: url("../img/icons/icon-cart.svg");
+}
+
+.social-icons li {
+	list-style-type: none;
+}
+
+.vk {
+	content: url("../img/icons/vk.svg");
+}
+
+.vk:hover {
+	content: url("../img/icons/vk-red.svg");
+}
