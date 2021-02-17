@@ -1,5 +1,77 @@
-body {
-	margin: 0;
+@font-face {
+	font-family: "Cuprum";
+	src: url("../fonts/cuprum.woff2"),
+		url("../fonts/cuprum.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum-bold";
+	src: url("../fonts/cuprumbold.woff2"),
+		url("../fonts/cuprumbold.woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cuprum-italic";
+	src: url("../fonts/cuprumitalic.woff2"),
+		url("../fonts/cuprumbold.woff");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Cuprum-bold-italic";
+	src: url("../fonts/cuprumbolditalic.woff2"),
+		url("../fonts/cuprumbolditalic.woff");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans.woff2"),
+		url("../fonts/ptsans.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "PT Sans-bold";
+	src: url("../fonts/ptsansbold.woff2"),
+		url("../fonts/ptsansbold.woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+:root {
+  /*Цвет фона*/
+  --regular-price: #EE3643;
+  --old-price: #A9A9A9;
+  --cart-button: #63A63E;
+  --cart-button-hover: #5FBB2D;
+  --cart-button-active: #518534;
+  --cart-bookmark-button: #63A63E;
+  --cart-bookmark-button-hov-act: #32425C;
+  --container-header-navigate: #293449;
+  --header-info: #F1F5F7;
+  --button-background-white: #FFFFFF;
+  --navigation-fon: #32425C;
+  --action-menu-button: #1D2739;
+  --banner-orange: #FFBF47;
+  --banner-blue: #3BBCE3;
+  --banner-violet: #DC91D8;
+  --banner-green: #8ED78F;
+
+  /*Цвет текста*/
+  --title-text: #000000;
+  --cart-bookmark-text-active: #32425C;
+  --cart-bookmark-text: #32425C;
+  --cart-button-text-white: #FFFFFF;
+  --header-text-red: #EE3643;
+  --acion-text-button: #C5C5C5;
 }
 
 .logo {
