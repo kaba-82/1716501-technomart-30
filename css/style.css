@@ -1134,7 +1134,7 @@
 
 .brand-img {
   margin: auto;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
 /*service*/
