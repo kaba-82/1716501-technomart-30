@@ -1078,6 +1078,7 @@
   display: block;
   text-decoration: none;
   margin: 10px 21px;
+  color: var(--text-header);
   border: 3px solid var(--Dark-yellow-green);
   box-sizing: border-box;
   border-radius: 2px;
