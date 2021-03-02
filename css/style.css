@@ -46,6 +46,19 @@
   font-style: normal;
 }
 
+@keyframes shake {
+  0%, 100%                {transform: translateX(0);    }
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80%      {transform: translateX(10px); }
+}
+
+@keyframes bounce {
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);   }
+  90%   {transform: translateY(-10px);  }
+  100%  {transform: translateY(0);      }
+}
+
 :root {
   /*Цвет фона*/
   --Deep-carmine-pink: #EE3643;
@@ -75,8 +88,6 @@
   --fon-catalog: #F7F3EC;
   --social-button: #212A3A;
   --border-button: #E5E5E5;
-
-  /*Цвет текста*/
   --title-text: #000000;
   --acion-text-button: #C5C5C5;
 }
@@ -212,8 +223,8 @@
 .header-bookmark-button::before {
   content: "";
   position: absolute;
-  left: 20px;
-  top: 13px;
+  left: 19px;
+  top: 12px;
   width: 14px;
   height: 16px;
   background-image: url(../img/icons/icon-bookmark.svg);
@@ -235,7 +246,7 @@
   position: relative;
   width: 150px;
   height: 42px;
-  padding: 9px 24px 9px 43px;
+  padding: 10px 42px;
   box-sizing: border-box;
   font-size: 18px;
 }
@@ -267,7 +278,7 @@
   display: block;
   width: 150px;
   height: 42px;
-  padding: 9px 26px 9px 49px;
+  padding: 10px 48px;
   text-align: center;
   box-sizing: border-box;
   position: relative;
@@ -348,7 +359,6 @@
   color: var(--Deep-carmine-pink);
   font-family: Cuprum-italic;
   font-size: 16px;
-  line-height: 23px;
   padding-left: 30px;
   margin: 0;
   font-weight: normal;
@@ -365,12 +375,11 @@
   box-sizing: border-box;
   width: 270px;
   height: 45px;
-  padding: 5px 0 0 30px;
+  padding: 5px 0 0 71px;
   font-family: Cuprum-bold;
   font-size: 21px;
   line-height: 30px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 6px 0 0 7px;
 }
 
 .phone-header-info::before {
@@ -388,9 +397,9 @@
 .adress {
   font-family: Cuprum;
   font-size: 14px;
-  text-align: center;
   padding: 3px 0 0 0;
   margin: 0;
+  margin-left: 17px;
 }
 /*<--telephone-block*/
 
@@ -405,7 +414,7 @@
 .login-header-info::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 16px;
   left: 19px;
   width: 20px;
   height: 17px;
@@ -419,13 +428,13 @@
   position: relative;
   width: 121px;
   height: 45px;
-  padding: 12px 0 0 21px;
+  padding: 14px 0 0 19px;
 }
 
 .reg-header-info {
   width: 150px;
   height: 45px;
-  padding-top: 12px;
+  padding-top: 14px;
 }
 
 .login-header-info,
@@ -570,7 +579,7 @@
   background: var(--navigation-fon);
   display: block;
   font-size: 18px;
-  padding: 18px 32px;
+  padding: 17px 28px;
 }
 
 .menu-button:hover {
@@ -608,7 +617,7 @@
   width: 135px;
   height: 38px;
   text-align: center;
-  margin: 17px 22px;
+  margin: 14px 23px;
   padding: 10px 7px;
   box-sizing: border-box;
   text-decoration: none;
@@ -679,13 +688,18 @@
 
 .advantages-img {
   position: absolute;
-  bottom: 27px;
-  right: 31px;
+  bottom: 29px;
+  right: 30px;
 }
 
-.item-img-1,
+.item-img-1 {
+  top: 31px;
+  right: 42px;
+}
+
 .item-img-4 {
-  right: 43px;
+  top: 25px;
+  right: 44px;
 }
 
 /*banner*/
@@ -702,12 +716,15 @@
   line-height: 36px;
   color: var(--white);
   margin: 0;
-  padding: 23px 24px;
+  padding: 24px 25px;
+  text-transform: uppercase;
 }
 
 .main-text-banner {
+  display: block;
   font-family: Cuprum;
   font-size: 18px;
+  text-transform: none;
 }
 
 .main-banner,
@@ -746,14 +763,14 @@
 
 .wrap-point .button-1 {
   position: absolute;
-  bottom: 39px;
-  left: 295px;
+  bottom: 36px;
+  left: 296px;
 }
 
 .wrap-point .button-2 {
   position: absolute;
-  bottom: 39px;
-  left: 315px;
+  bottom: 36px;
+  left: 316px;
 }
 
 .arrow-banner-follow {
@@ -769,8 +786,8 @@
 .arrow-banner-next {
   position: absolute;
   right: 0;
-  top: 122px;
-  padding-left: 24px;
+  top: 116px;
+  padding-left: 19px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -788,7 +805,7 @@
   font-family: Cuprum-bold;
   font-size: 24px;
   line-height: 30px;
-  padding: 20px 0 0 22px;
+  padding: 20px 0 0 24px;
   margin: 0;
 }
 
@@ -807,7 +824,7 @@
   font-size: 14px;
   line-height: 18px;
   bottom: 0;
-  margin: 0 0 27px 24px;
+  margin: 0 0 35px 25px;
 }
 
 .main-banner-button:hover {
@@ -840,7 +857,7 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  margin: auto 28px;
+  margin: auto 29px;
 }
 
 .main-popular-button,
@@ -848,7 +865,7 @@
   display: block;
   width: 192px;
   height: 38px;
-  padding: 11px 24px;
+  padding: 11px 0px;
   padding-bottom: 9px;
   background: var(--Deep-carmine-pink);
   color: var(--white);
@@ -858,7 +875,11 @@
   box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
-  margin: auto 14px;
+  margin: auto 13px;
+}
+
+.main-button-brand {
+  margin: auto 17px;
 }
 
 .main-popular-button:hover,
@@ -959,7 +980,7 @@
 
 .item-title {
   width: 185px;
-  margin: 0 auto;
+  margin: 5px auto;
   text-align: center;
   font-family: PT Sans-bold;
   font-size: 18px;
@@ -994,8 +1015,8 @@
   max-height: 38px;
   background: var(--Deep-carmine-pink);
   color: var(--white);
-  border-radius: 5px 0px 0px 5px;
-  margin: auto;
+  border-radius: 3px 0px 0px 3px;
+  margin: 12px 45px;
   box-sizing: border-box;
 }
 
@@ -1012,6 +1033,7 @@
 .regular-price-text {
   position: relative;
   top: -3px;
+  left: 5px;
 }
 
 /*button-cart*/
@@ -1088,7 +1110,7 @@
   width: 135px;
   height: 38px;
   text-align: center;
-  padding-top: 7px;
+  padding-top: 5px;
   margin-right: 0;
   font-family: Cuprum;
   font-size: 14px;
@@ -1165,7 +1187,7 @@
   font-family: PT Sans;
   font-size: 13px;
   padding-bottom: 36px;
-  margin: 0;
+  margin: 0 1px;
 }
 
 .wrap-service-box {
@@ -1205,7 +1227,7 @@
   line-height: 30px;
   color: var(--white);
   box-sizing: border-box;
-  padding: 15px;
+  padding: 15px 23px;
   cursor: pointer;
 }
 
@@ -1216,7 +1238,7 @@
 }
 
 .delivery {
-  margin-top: 29px;
+  margin-top: 35px;
 }
 
 .wrap-delivery,
@@ -1237,14 +1259,17 @@
 }
 
 .title-service-label {
+  display: block;
   font-size: 30px;
   line-height: 30px;
+  margin: -2px 1px;
   text-transform: uppercase;
 }
 
 .text-service-label {
   font-family: PT Sans;
   font-size: 13px;
+  margin: 6px 1px;
 }
 
 .text-delivery,
@@ -1276,8 +1301,8 @@
 
 .img-credit {
   position: absolute;
-  top: 50px;
-  left: 230px;
+  top: 42px;
+  left: 245px;
 }
 
 .button-service-label {
@@ -1293,7 +1318,7 @@
   box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 80px;
+  margin: 26px 0 0 82px;
 }
 
 .button-service-label:hover {
@@ -1308,7 +1333,7 @@
 .about-us {
   width: 940px;
   margin: 0 auto;
-  padding: 70px 0 70px 0;
+  padding: 71px 0 70px 0;
   position: relative;
 }
 
@@ -1319,6 +1344,7 @@
 }
 
 .title-about-us{
+  display: block;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -1328,21 +1354,53 @@
 .text-about {
   font-family: PT Sans;
   font-size: 13px;
-  margin: 24px 0 5px 0;
+  margin: 0 0 3px 1px;
 }
 
 .about-us-list {
-  margin: 0 0 8px 0;
+  padding-left: 38px;
+  margin: 0 0 7px 0;
+  list-style-type: none;
+  position: relative;
 }
 
 .about-us-item {
   padding-bottom: 12px;
 }
 
+.i-1::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 1px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--Deep-carmine-pink);
+}
+.i-2::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 1px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--Deep-carmine-pink);
+}
+
+.i-3::before {
+  content: "";
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: var(--Deep-carmine-pink);
+}
+
 .text-about-us {
   font-family: PT Sans;
   font-size: 13px;
-  margin: 24px 0 32px 0;
+  margin: 0 0 32px 0;
 }
 
 .about-us-item {
@@ -1360,7 +1418,8 @@
   display: block;
   width: 220px;
   height: 38px;
-  padding: 11px 24px 9px 24px;
+  padding-top: 12px;
+  padding-left: 2px;
   background: var(--Deep-carmine-pink);
   color: var(--white);
   text-decoration: none;
@@ -1382,14 +1441,17 @@
 .button-about-us {
   width: 300px;
   height: 38px;
-  outline: none;
-  border: none;
+  display: block;
+  padding-top: 12px;
+  padding-left: 4px;
   background: var(--Deep-carmine-pink);
   color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .button-about-us:hover {
@@ -1419,11 +1481,27 @@
   grid-template-columns: min-content 1fr;
 }
 
+.logo-footer {
+  position: relative;
+  width: 221px;
+  height: 68px;
+  background: var(--Deep-carmine-pink);
+  box-shadow: inset 0px -5px 0px rgb(0 0 0 / 24%);
+}
+
+.logo-img-footer {
+  position: absolute;
+  top: 7px;
+  left: 41px;
+  width: 139px;
+  height: 49px;
+}
+
 .footer-navigation-list {
   display: flex;
   justify-content: space-between;
   margin-left: 174px;
-  margin-top: auto;
+  margin-top: 38px;
 }
 
 .button-footer-navigation:hover {
@@ -1445,8 +1523,10 @@
 .footer-list {
   display: flex;
   justify-content: space-between;
+  padding-left: 8px;
   margin-top: 28px;
   margin-bottom: auto;
+  font-size: 18px;
 }
 
 .button-gold-navigation {
@@ -1477,12 +1557,25 @@
   color: var(--white);
   text-decoration: none;
   margin: 0;
-  margin-top: 22px;
+  font-size: 18px;
+}
+
+.footer-adress {
+  margin-left: 4px;
+  margin-top: 23px;
+}
+
+.post-text {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .text-footer-copyright {
   color: var(--white);
   margin: 0;
+  line-height: 18px;
+  padding-left: 2px;
+  padding-top: 3px;
 }
 
 .wrap-copyright {
@@ -1501,9 +1594,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 136px;
-  margin: 0 auto;
-
+  width: 133px;
+  margin: 7px 0 0 78px;
 }
 
 .social-button {
@@ -1557,7 +1649,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 215px;
+  bottom: 0px;
   left: 0;
   margin: auto;
   z-index: 20;
@@ -1601,6 +1693,12 @@
   display: none;
   width: 620px;
   height: 282px;
+}
+
+.modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
 }
 
 .wrap-form-addcart {
@@ -1684,12 +1782,18 @@
   font-size: 13px;
 }
 
-.name-form, .email-form {
+.name-form,
+.email-form {
   width: 220px;
   height: 38px;
   box-sizing: border-box;
   border: 2px solid var(--acion-text-button);
   border-radius: 2px;
+}
+
+.name-form-error,
+.email-form-error {
+  border: 2px solid var(--Deep-carmine-pink);
 }
 
 .wrap-text {
@@ -2319,4 +2423,13 @@ background-color: rgba(169,169,169,0.5);
 .about-contact iframe,
 .modal-map iframe {
   border: none;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.addcart-current {
+  background-color: var(--Deep-carmine-pink);
 }

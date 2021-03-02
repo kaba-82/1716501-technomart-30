@@ -87,21 +87,21 @@
       <div class="container-main-banner">
         <div class="wrap-main-banner">
           <a class="main-banner-button" href="#">Открыть каталог</a>
-          <div class="main-banner current-img">
+          <div class="main-banner ">
             <img class="main-banner-img" src="img/perforator.jpg" width="620" height="266" alt="Дрели">
             <p class="main-title-banner">Перфораторы<br><span class="main-text-banner">Настоящие мужские игрушки</span></p>
           </div>
-          <div class="main-banner ">
+          <div class="main-banner current-img">
             <img class="main-banner-img" src="img/drel.jpg" width="620" height="266" alt="Дрели">
-            <p class="main-title-banner">Дрели<br><span class="main-text-banner">Соседям на радость!</span></p>
+            <p class="main-title-banner">Дрели <span class="main-text-banner">Соседям на радость!</span></p>
           </div>
           <button class="arrow-banner-follow"><img src="img/icons/icon-left.svg"></button>
           <button class="arrow-banner-next"><img src="img/icons/icon-left.svg"></button>
         </div>
         <br>
         <div class="wrap-point">
-          <button class="main-banner-point button-1 current" aria-label="Первый слайд"></button>
-          <button class="main-banner-point button-2 " aria-label="Первый слайд"></button>
+          <button class="main-banner-point button-1 " aria-label="Первый слайд"></button>
+          <button class="main-banner-point button-2 current" aria-label="Второй слайд"></button>
         </div>
       </div>
       <div class="wrap-advantages item-4">
@@ -262,16 +262,18 @@
         <div class="wrap-about-us">
           <span class="title-about-us">компания «Техномарт»</span><br><p class="text-about">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br><br>Мы можем доставить ваш товар в самые отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:</p>
           <ul class="about-us-list">
-            <li class="about-us-item">Деловые линии</li>
-            <li class="about-us-item">Автотрейдинг</li>
-            <li class="about-us-item">ЖелДорЭкспедиция</li>
+            <li class="about-us-item i-1">Деловые линии</li>
+            <li class="about-us-item i-2">Автотрейдинг</li>
+            <li class="about-us-item i-3">ЖелДорЭкспедиция</li>
           </ul>
           <a  class="button-us-item" href="#">Подробнее о компании</a>
         </div>
         <div class="about-contact">
           <span class="title-about-us">контакты</span><br><p class="text-about-us">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-            <iframe class="about-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="300" height="158" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-          <button class="button-about-us" type="submit">Заблудились? Напишите нам!</button>
+            <a class="about-map" href="map.html-">
+              <img src="img/mini-map.jpg">
+            </a>
+          <a class="button-about-us" href="modal-about.html">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -279,8 +281,8 @@
   <footer class="footer-content">
     <div class="wrap-footer-navigation">
       <div class="footer-top">
-        <a class="logo-link" href="#">
-          <img class="logo" src="img/icons/logo-technomart.svg" alt="Логотип">
+        <a class="logo-link logo-footer" href="#">
+          <img class="logo-img-footer" src="img/icons/logo-technomart.svg" alt="Логотип">
         </a>
         <ul class="footer-navigation-list">
           <li class="footer-navigation-item"><a class="button-footer-navigation" href="#">Компания</a></li>
@@ -333,31 +335,33 @@
         <div  class="footer-vertical">
           <ul class="post-list">
             <li class="post-item"><span class="post-text">Обратная связь:</span><br><a class="post-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-            <li class="post-item"><span class="post-text">Разработано —</span><br><a class="post-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></li>
+            <li class="post-item"><span class="post-text">Разработано -</span><br><a class="post-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
   <section class="modal modal-about">
-    <div class="wrap-form-about">
-      <button class="modal-close" aria-label="Закрыть"></button>
-      <div class="wrap-name">
-        <label class="name-label" for="name">Ваше имя:</label>
-        <input class="name-form" type="text" id="name" placeholder="Имя Фамилия">
+    <form class="send-form" action="https://echo.htmlacademy.ru" metod="post">
+      <div class="wrap-form-about">
+        <button class="modal-close" aria-label="Закрыть"></button>
+        <div class="wrap-name">
+          <label class="name-label" for="name">Ваше имя:</label>
+          <input class="name-form" type="text" id="name" name="user_name" placeholder="Имя Фамилия">
+        </div>
+        <div class="wrap-email">
+          <label class="email-label" for="email">Ваше e-mail:</label>
+          <input class="email-form" type="email" id="email" name="user_email" placeholder="email@example.com">
+        </div>
+        <div class="wrap-text">
+          <label class="text-label" for="text">Текст письма:</label>
+          <textarea class="text-form" name="user_text" type="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="wrap-button-form">
+          <button class="button-form">Отправить</button>
+        </div>
       </div>
-      <div class="wrap-email">
-        <label class="email-label" for="email">Ваше e-mail:</label>
-        <input class="email-form" type="email" id="email" placeholder="email@example.com">
-      </div>
-      <div class="wrap-text">
-        <label class="text-label" for="text">Текст письма:</label>
-        <textarea class="text-form" type="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
-      </div>
-      <div class="wrap-button-form">
-        <button class="button-form">Отправить</button>
-      </div>
-    </div>
+    </form>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться?</h2>
@@ -378,5 +382,6 @@
       </div>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
